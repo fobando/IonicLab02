@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Operations</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome, {{ getAccountName() }}</h2>
+  <p>
+    Your current balance is {{ getCurrentBalance() }}
+  </p>
+
+  <ion-list>
+    <button ion-button round (click)="goToDeposit()"> Deposit</button>
+    <button ion-button round (click)="goToWithdawal()"> Witdrawal</button>
+  </ion-list>
+
+</ion-content>

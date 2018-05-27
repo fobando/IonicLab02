@@ -1,0 +1,58 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Atm Project</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="myForm" (ngSubmit)="doLogin()">
+
+
+    <ion-list>
+      <ion-label>Account Number</ion-label>
+      <ion-item>
+        <input type='text' placeholder="Account Number" formControlName="accountNumber">
+      </ion-item>
+      <ion-label>PIN Number</ion-label>
+      <ion-item>
+        <input type='password' placeholder="PIN Number" formControlName="pinNumber">
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!myForm.valid">Login</button>
+    </div>
+  </form>
+
+</ion-content>
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>ATM Project</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <form [formGroup]="myForm" (ngSubmit)="doLogin()">
+    <ion-list>
+      <ion-label>Account number</ion-label>
+      <ion-item>
+        <ion-input type="text" placeHolder="enter account" formControlName="accountNumber"> </ion-input>
+      </ion-item>
+      <ion-label>Pin number</ion-label>
+      <ion-item>
+        <ion-input type="password" placeHolder="enter account" formControlName="pinNumber"> </ion-input>
+      </ion-item>
+    </ion-list>
+    <div padding>
+      <button ion-button block type="submit" [disabled]="!myForm.valid">Login</button>
+    </div>
+  </form>
+</ion-content>
